@@ -1,0 +1,2 @@
+# soun
+a ghost theme
