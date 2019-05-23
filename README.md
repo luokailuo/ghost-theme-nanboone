@@ -1,2 +1,2 @@
-# soun
+# Dozaki
 a ghost theme
