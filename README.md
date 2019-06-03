@@ -1,2 +1,2 @@
-# Dozaki
+# Sun
 a ghost theme          
