@@ -1,5 +1,5 @@
 # Sun
-a ghost theme for Ghost inspired by the [TryGhost/Casper](https://github.com/TryGhost/Casper) and [TryGhost/Blog](https://github.com/TryGhost/Blog).          
+a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) and [TryGhost/Blog](https://github.com/TryGhost/Blog).          
 
 # Live Demo 
 
