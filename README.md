@@ -6,22 +6,6 @@ a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) 
 
 [我的博客](https://yehuzi.com)
 
-# 截图 
-
-### home page     
-![](/screenshot-desktop-cn.png)    
-
-
-### post page 
-![](/screenshot-post.png) 
-
-### tag page
-![](/screenshot-tag.png) 
-
-### mobile
-![](/screenshot-mobile.png) 
-
-
 # 安装主题
 
 1. 点击[这里](https://github.com/yehuzi/Sun/releases/tag/1.0.0)下载主题压缩包
@@ -42,3 +26,18 @@ yarn dev
 ### 修改模板    
 
 关于Ghost主题自定义开发，请参阅 [Ghost官方文档](https://docs.ghost.org/api/handlebars-themes/)   
+
+# 截图 
+
+### home page     
+![](/screenshot-desktop-cn.png)    
+
+
+### post page 
+![](/screenshot-post.png) 
+
+### tag page
+![](/screenshot-tag.png) 
+
+### mobile
+![](/screenshot-mobile.png) 
