@@ -1261,9 +1261,34 @@ h6 {
     margin: 0;
 }
 
-.post-template .kg-card-markdown > p:first-child {
+.post-template > p:first-child {
     font-size: 1.25em;
     line-height: 1.65em;
+}
+
+.post-full-content .kg-width-wide .kg-image {
+    max-width: 1040px;
+}
+
+.post-full-content .kg-width-full .kg-image {
+    max-width: 100vw;
+}
+
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width: 100vw;
+}
+
+.kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
 }
 
 .post-full-content a {
