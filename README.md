@@ -24,7 +24,7 @@ a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) 
 # 安装主题
 
 1. 点击[这里](https://github.com/yehuzi/Sun/releases/tag/1.0.0)下载主题压缩包
-2. 进入自己的Ghost博客后台，点击：SETTINGS->Design->Upload a theme，上传下载的主题包    
+2. 进入自己的Ghost博客后台，点击：SETTINGS->Design->Upload a theme，上传第一步下载的主题包并启用主题    
 
 
 # 修改主题  
