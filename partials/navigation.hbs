@@ -1,0 +1,5 @@
+<ul>
+    {{#foreach navigation}}
+    <li><a class="gh-navbar-item{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{t label}}</a></li>
+    {{/foreach}}
+</ul>

@@ -1,0 +1,41 @@
+{{#primary_author}}
+<div class="post-separator"></div>
+<!-- author inof -->
+<div class="author-card">
+    {{#if profile_image}}
+    <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
+    {{else}}
+    <span class="author-avatar icon-avatar" aria-hidden="true"></span>
+    {{/if}}
+    <div>
+        <h4 class="author-card-name">
+            {{name}}
+        </h4>
+        {{#if bio}}
+        <div style="padding: 0 10px;">{{{bio}}}</div>
+        {{else}}
+        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+        {{/if}}
+    </div>
+</div>
+{{/primary_author}}
+
+
+{{!-- next_post/prev_post --}}
+<aside>
+    <div class="inner-wide">
+        <div class="prev-np-wrap">
+            <div class="post-np-item-wrap">
+                {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}}
+                {{#next_post}}
+                {{> "post-prev"}}
+                {{/next_post}}
+
+                {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}}
+                {{#prev_post}}
+                {{> "post-next"}}
+                {{/prev_post}}
+            </div>
+        </div>
+    </div>
+</aside>

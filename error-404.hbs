@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{asset "css/all.min.css"}}" />
+</head>
+
+<body class="error-template">
+    {{> "header"}}
+    <div>
+        <main id="site-main" class="site-main">
+            <div class="inner-wide">
+                <section class="error-message">
+                    <h1 class="error-code">{{code}}</h1>
+                    <p class="error-description">{{t message}}</p>
+                    <a class="error-link" href="{{@site.url}}">{{t "Go to the front page"}} →</a>
+                </section>
+            </div>
+        </main>
+
+        {{#get "posts" limit="5"}}
+        <aside>
+            <div class="inner-wide">
+                <div>
+                    {{#foreach posts}}
+                    {{> "post-card"}}
+                    {{/foreach}}
+                </div>
+            </div>
+        </aside>
+        {{/get}}
+    </div>
+    {{> "footer"}}
+    {{> "totop"}}
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="{{asset "js/plugins.js"}}"></script>
+<script src="{{asset "js/highlight.pack.js"}}"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+</html>

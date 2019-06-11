@@ -1,0 +1,14 @@
+<header class="site-header">
+    <div class="inner-wide text-center">
+        <div class="site-logo">
+            {{#if @site.logo}}
+            <a href="/">
+                <img src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+            </a>
+            {{else}}
+            <a href="/">{{@site.title}}</a>
+            {{/if}}
+            <div class="site-description">{{@site.description}}</div>
+        </div>
+    </div>
+</header>

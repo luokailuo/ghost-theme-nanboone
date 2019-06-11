@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "img/favicon.png"}}">
+    <link rel="stylesheet" href="{{asset "css/all.min.css"}}" />
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    {{> "header"}}
+    {{{body}}}
+    {{> "footer"}}
+    {{> "totop"}}
+
+    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+    {{ghost_foot}}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="{{asset "js/plugins.js"}}"></script>
+    {{!--code highlight --}}
+    <script src="{{asset "js/highlight.pack.js"}}"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    {{{block "scripts"}}}
+</body>
+
+</html>

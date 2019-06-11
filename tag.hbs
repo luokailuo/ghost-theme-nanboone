@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{#tag}}
+<header class="tag-header">
+    <div class="inner-wide">
+        <div class="tag-header-content">
+            <div class="tag-header-center">
+                <h1 class="tag-title">
+                    {{#if meta_title}}
+                    {{meta_title}}
+                    {{else}}
+                    {{name}}
+                    {{/if}}
+                </h1>
+                <h2 class="tag-description">
+                    {{#if description}}
+                    {{description}}
+                    {{else}}
+                    {{plural ../pagination.total empty=(t "A collection of posts") singular=(t "A collection of % posts") plural=(t "A collection of % posts")}}
+                    {{/if}}
+                </h2>
+            </div>
+        </div>
+    </div>
+</header>
+{{/tag}}
+
+<main id="site-main" class="main-content">
+    <div class="inner-wide">
+        <div>
+            {{#foreach posts}}
+            {{> "post-card"}}
+            {{/foreach}}
+        </div>
+    </div>
+</main>
+
+{{pagination}}

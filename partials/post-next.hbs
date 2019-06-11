@@ -1,0 +1,18 @@
+<article class="post-np-item">
+
+    <div class="post-np-img" style="background-image: url({{feature_image}})"></div>
+    <a class="permalink-overlay" href="{{url}}"></a>
+
+    <span class="post-nav-next">
+        {{t "Next post"}}
+    </span>
+
+    <div class="post-np-content-wrap">
+        <h3 class="post-np-title">{{title}}</h3>
+        <span class="reading-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
+        {{#foreach tags}}
+        <span class="post-np-tag">{{name}}</span>
+        {{/foreach}}
+    </div>
+
+</article>

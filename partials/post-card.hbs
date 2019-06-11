@@ -1,0 +1,20 @@
+<article class="post-item {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+    <!-- Print out feature_image or not -->
+    <div class="post-image" style="background-image: url({{feature_image}})" title="{{title}}"></div>
+
+    <a {{#if canonical_url}}href="{{canonical_url}}" target="_blank" rel="noopener" {{else}}href="{{url}}" {{/if}}
+        class="permalink-overlay"></a>
+    <div class="post-content-wrap">
+        <h2 class="post-item-title">{{title}}</h2>
+        <div>
+            <time class="post-item-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY, MMM Do"}}</time>
+            {{#if tags}}
+            {{#foreach tags}}
+            <span class="post-item-tag tag-{{slug}}">{{name}}</span>
+            {{/foreach}}
+            {{/if}}
+            <span
+                class="post-item-reading-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
+        </div>
+    </div>
+</article>
