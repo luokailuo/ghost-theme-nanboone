@@ -6,6 +6,9 @@
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
     },
+    "scripts": {
+        "dev": "gulp"
+    },
     "license": "MIT",
     "author": {
         "name": "yehuzi",
