@@ -70,6 +70,9 @@ var disqus_shortname = '你的 Disqus shortname';
 
 可参考[这篇文章](https://yehuzi.com/gei-ghostbo-ke-tian-jia-tagsgui-dang-ye/)
 
+#### 2.4 国际化    
+
+目前提供了三个版本的语言（简体/英文/繁体）。启用步骤：登录管理后台，选择 `Setting/General`，在 `Publication Language` 文本框内输入任意(zh-CN/en/zh-TW)后保存即可。     
 
 
 ## 三. 截图 
