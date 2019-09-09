@@ -54,7 +54,9 @@ Your admin interface is located at:
 
 终端`cd` 命令进入`content/themes/nanboone`目录，`yarn install`安装依赖包，安装完成后，运行`yarn run dev` 。
 
-修改主题的样式源文件（位于`/res/css/` 目录），它们将自动编译到 `/assets/css/`目录，即可定义自己喜欢的样式，本地浏览器刷新 `http://localhost:2368` 可以查看修改后的网址样式。   
+修改主题的样式源文件（位于`/res/css/` 目录），它们将自动编译到 `/assets/css/`目录，即可定义自己喜欢的样式，本地浏览器刷新 `http://localhost:2368` 可以查看修改后的网站样式。   
+
+最后，将`/assets/css/` 目录的文件上传到自己服务器上即可。
 
 #### 2.2 添加评论   
 
