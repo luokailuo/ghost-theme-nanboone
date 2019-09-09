@@ -1,33 +1,76 @@
-# Nanboone
+## Nanboone
 a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) and [TryGhost/Blog](https://github.com/TryGhost/Blog).          
 一个大图大字体的Ghost主题
 
-# Live Demo 
-
-[我的博客](https://yehuzi.com)
-
-# 安装主题
-
-1. 点击[这里](https://github.com/yehuzi/ghost-theme-nanboone/releases/tag/1.0.0)下载主题压缩包
-2. 进入自己的Ghost博客后台，点击：SETTINGS->Design->Upload a theme，上传第一步下载的主题包并启用主题    
+## [Live Demo ](https://yehuzi.com)
 
 
-# 修改主题  
-   
-clone 主题到本地，全局安装 Node,Yarn,Gulp，完成后，在主题根目录下运行：
+
+## 一. 安装主题
+
+1. 点击[这里](https://github.com/yehuzi/ghost-theme-nanboone/releases/tag)下载主题压缩包
+
+2. 进入自己的Ghost博客后台，点击：SETTINGS->Design->Upload a theme，上传第一步下载的主题包并启用主题
+
+   > 上传主题可能会提示一些 warning 和 error，可不理会，正常 active 主题即可。   
+
+
+
+## 二. 自定义主题  
+
+#### 本地安装 Ghost
+
+详细安装步骤请参见 [How to install Ghost locally](https://ghost.org/docs/setup/)
+
+本地安装 Ghost 完成后，进入 Ghost 根目录，运行下面命令启动 Ghost：
+
 ```
-yarn install
-yarn dev
-``` 
-### 修改样式  
+ghost start
+```
 
-主题的样式源文件位于`/res/css/`目录下，编辑 `/res/css/` 下的样式文件，它们将自动编译到 `/assets/css/`目录下    
+终端输出如下信息
 
-### 修改模板    
+```
+➜  GhostLocal ghost start
+✔ Checking current folder permissions
+✔ Validating config
+✔ Checking memory availability
+✔ Starting Ghost
 
-关于Ghost主题自定义开发，请参阅 [Ghost官方文档](https://docs.ghost.org/api/handlebars-themes/)   
+------------------------------------------------------------------------------
 
-# 截图 
+Your admin interface is located at: 
+
+    http://localhost:2368/ghost/
+```
+
+打开 `http://localhost:2368/ghost/`，进入 Ghost 后台。
+
+#### 启用主题
+
+下载主题 zip 压缩包，进入本地启动的 Ghost 博客后台，点击：SETTINGS->Design->Upload a theme，上传下载的主题包，`active theme`。
+
+#### 2.1 修改默认样式  
+
+终端`cd` 命令进入`content/themes/nanboone`目录，`yarn install`安装依赖包，安装完成后，运行`yarn run dev` 。
+
+修改主题的样式源文件（位于`/res/css/` 目录），它们将自动编译到 `/assets/css/`目录，即可定义自己喜欢的样式，本地浏览器刷新 `http://localhost:2368` 可以查看修改后的网址样式。   
+
+#### 2.2 添加评论   
+
+主题默认使用 Disqus 评论系统，注册 Disqus 后将你的 shortname 填入 `partials/comments.hbs` 下面的位置即可：
+
+```
+var disqus_shortname = '你的 Disqus shortname';
+```
+
+#### 2.3 添加归档页
+
+可参考[这篇文章](https://yehuzi.com/gei-ghostbo-ke-tian-jia-tagsgui-dang-ye/)
+
+
+
+## 三. 截图 
 
 ### home page     
 ![](/screenshot-desktop-cn.png)    
