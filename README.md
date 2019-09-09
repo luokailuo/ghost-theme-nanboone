@@ -12,7 +12,7 @@ a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) 
 
 2. 进入自己的Ghost博客后台，点击：SETTINGS->Design->Upload a theme，上传第一步下载的主题包并启用主题
 
-   > 上传主题可能会提示一些 warning 和 error，可不理会，正常 active 主题即可。   
+  
 
 
 
