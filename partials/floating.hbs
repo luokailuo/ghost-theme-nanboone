@@ -1,0 +1,22 @@
+<!--悬浮按钮-->
+<div class="floating">
+    <div id="translate-btn" class="btn translate">
+        <a id="translateLink" href="javascript:translatePage();">繁</a>
+    </div>
+    <div id="back-to-top" class="btn">
+        <span class="icon-arrow-up" aria-hidden="true"></span>
+    </div>
+</div>
+
+
+
+<script src="{{asset "js/tw_cn.js"}}"></script>
+<script type="text/javascript">
+    var defaultEncoding = 2; //1-繁体，2-简体
+    var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+    var cookieDomain = "http://yourwebsite.com/"; //Cookie地址, 通常为你的网址
+    var msgToTraditionalChinese = "繁";
+    var msgToSimplifiedChinese = "简";
+    var translateButtonId = "translateLink"; //id
+    translateInitilization();
+</script>

@@ -1,20 +1,23 @@
 {
-    "name": "sun",
-    "description": "a ghost theme",
-    "version": "1.0.0",
+    "name": "nanboone",
+    "description": "a ghost theme inspired by TryGhost/Casper and TryGhost/Blog.",
+    "version": "1.1.0",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
     },
-    "scripts": {
-        "dev": "gulp"
-    },
     "license": "MIT",
+    "scripts": {
+        "dev": "gulp",
+        "test": "gscan .",
+        "pretest": "gulp build",
+        "preship": "yarn test"
+    },
     "author": {
         "name": "yehuzi",
         "email": "i@yehuzi.com"
     },
-    "homepage": "https://github.com/yehuzi/Sun",
+    "homepage": "https://github.com/yehuzi/ghost-theme-nanboone",
     "devDependencies": {
         "autoprefixer": "9.4.10",
         "cssnano": "4.1.10",
@@ -33,6 +36,6 @@
         "postcss-easy-import": "3.0.0"
     },
     "config": {
-        "posts_per_page": 5
+        "posts_per_page": 10
     }
 }

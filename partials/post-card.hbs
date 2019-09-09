@@ -1,7 +1,15 @@
 <article class="post-item {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
     <!-- Print out feature_image or not -->
-    <div class="post-image" style="background-image: url({{feature_image}})" title="{{title}}"></div>
-
+    {{#if feature_image}}
+    <div class="post-image" style="background-image: url({{feature_image}})" title="{{title}}">
+    </div>
+    {{else}}
+    <div class="post-image" style="background-image: url({{asset "img/placeholder.jpg"}})" title="{{title}}">
+    </div>
+    {{/if}}
+    {{#if featured}}
+    <span class="icon-featured"></span>
+    {{/if}}
     <a {{#if canonical_url}}href="{{canonical_url}}" target="_blank" rel="noopener" {{else}}href="{{url}}" {{/if}}
         class="permalink-overlay"></a>
     <div class="post-content-wrap">
@@ -10,7 +18,7 @@
             <time class="post-item-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY, MMM Do"}}</time>
             {{#if tags}}
             {{#foreach tags}}
-            <span class="post-item-tag tag-{{slug}}">{{name}}</span>
+            <span class="post-item-tag tag-{{slug}}"><a href="{{url}}">{{name}}</a></span>
             {{/foreach}}
             {{/if}}
             <span

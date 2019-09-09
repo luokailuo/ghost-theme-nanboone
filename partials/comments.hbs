@@ -1,0 +1,44 @@
+<section>
+    <div class="text-center">
+        <button class="disqusBtn" id="load-disqus" onclick="load();">加载评论</button>
+    </div>
+    <div id="disqus_thread" style="padding: 0 40px;"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments.</a></noscript>
+</section>
+
+<script type="text/javascript">
+    var disqus_shortname = '你的 Disqus ID';
+
+    function isInChina(cb) {
+        var url = '//graph.facebook.com/feed?callback=h';
+        var xhr = new XMLHttpRequest();
+        var called = false;
+        xhr.open('GET', url);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                called = true;
+                cb(false);
+            }
+        };
+        xhr.send();
+        // timeout 1s, this facebook API is very fast.
+        setTimeout(function () {
+            if (!called) {
+                xhr.abort();
+                cb(true);
+            }
+        }, 1500);
+    }
+
+    function load() {
+        $("#load-disqus").remove();
+        isInChina(function (inChina) {
+            if (!inChina) {
+                var d = document, s = d.createElement('script');
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            }
+        })
+    }
+</script>

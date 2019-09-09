@@ -1,6 +1,11 @@
 <article class="post-np-item">
-
-    <div class="post-np-img" style="background-image: url({{feature_image}})"></div>
+    {{#if feature_image}}
+    <div class="post-np-img" style="background-image: url({{feature_image}})">
+    </div>
+    {{else}}
+    <div class="post-np-img" style="background-image: url({{asset "img/placeholder.jpg"}})">
+    </div>
+    {{/if}}
     <a class="permalink-overlay" href="{{url}}"></a>
 
     <span class="post-nav-next">
@@ -11,7 +16,7 @@
         <h3 class="post-np-title">{{title}}</h3>
         <span class="reading-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
         {{#foreach tags}}
-        <span class="post-np-tag">{{name}}</span>
+        <span class="post-item-tag tag-{{slug}}"><a href="{{url}}">{{name}}</a></span>
         {{/foreach}}
     </div>
 

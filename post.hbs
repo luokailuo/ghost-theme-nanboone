@@ -6,8 +6,13 @@
     <article
         class="post-full {{post_class}} {{#has tag='#noimg'}}no-image{{else}}{{#unless feature_image}}no-image{{/unless}}{{/has}}">
         <div class="post-full-header">
+            {{#if feature_image}}
             <div class="post-full-cover" style="background-image: url({{feature_image}})">
             </div>
+            {{else}}
+            <div class="post-full-cover" style="background-image: url({{asset "img/placeholder.jpg"}})">
+            </div>
+            {{/if}}
             <div class="post-full-text">
                 <div class="post-full-meta">
                     <time class="post-full-meta-date"
@@ -23,12 +28,17 @@
 
     <div class="inner-wide">
         <section class="post-full-content">
-            <div class="post-content">
-                {{content}}
-            </div>
+            {{content}}
         </section>
+        {{!-- post footer --}}
         {{> post-footer}}
+        {{> comments}}
     </div>
 </main>
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+
+{{/contentFor}}
 
 {{/post}}

@@ -1,5 +1,4 @@
 {{#primary_author}}
-<div class="post-separator"></div>
 <!-- author inof -->
 <div class="author-card">
     {{#if profile_image}}
@@ -8,14 +7,19 @@
     <span class="author-avatar icon-avatar" aria-hidden="true"></span>
     {{/if}}
     <div>
-        <h4 class="author-card-name">
+        <h4 class="author-card-name" style="display: none">
             {{name}}
         </h4>
         {{#if bio}}
-        <div style="padding: 0 10px;">{{{bio}}}</div>
+        <div>{{{bio}}}</div>
         {{else}}
         <p>Read <a href="{{url}}">more posts</a> by this author.</p>
         {{/if}}
+    </div>
+    <div>
+        <div class="post-divider-wrap">
+            <span class="post-divider">End</span>
+        </div>
     </div>
 </div>
 {{/primary_author}}
