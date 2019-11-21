@@ -76,16 +76,5 @@ var disqus_shortname = '你的 Disqus shortname';
 
 
 ## 三. 截图 
-
-### home page     
-![](/screenshot-desktop-cn.png)    
-
-
-### post page 
-![](/screenshot-post.png) 
-
-### tag page
-![](/screenshot-tag.png) 
-
-### mobile
-![](/screenshot-mobile.png) 
+  
+![](/nanbooness.42f27df9.jpg)    
