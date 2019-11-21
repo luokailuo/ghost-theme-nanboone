@@ -2,7 +2,7 @@
 a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) and [TryGhost/Blog](https://github.com/TryGhost/Blog).          
 一个大图大字体的Ghost主题
 
-## [Live Demo ](https://work.yehuzi.com/quokka/)
+## [Live Demo ](https://work.yehuzi.com/nanboone/)
 
 
 
