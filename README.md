@@ -2,13 +2,13 @@
 a ghost theme inspired by [TryGhost/Casper](https://github.com/TryGhost/Casper) and [TryGhost/Blog](https://github.com/TryGhost/Blog).          
 一个大图大字体的Ghost主题
 
-## [Live Demo ](https://yehuzi.github.io/demo/nanboone/)
+## [Live Demo ](https://heyrock.github.io/demo/nanboone/)
 
 
 
 ## 一. 安装主题
 
-1. 点击[这里](https://github.com/yehuzi/ghost-theme-nanboone/releases)下载主题压缩包
+1. 点击[这里](https://github.com/heyrock/ghost-theme-nanboone/releases)下载主题压缩包
 
 2. 进入自己的Ghost博客后台，点击：SETTINGS->Design->Upload a theme，上传第一步下载的主题包并启用主题
 
